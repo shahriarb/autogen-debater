@@ -1,0 +1,32 @@
+import autogen
+import os
+
+AGENT_NAME='Shab'
+AGENT_PERSONALITY="Analytical and data-driven"
+
+def create_debater_agent(stance):
+    config_list = [
+    {
+        "model": "gpt-4o",
+        "api_key": os.environ["OPENAI_API_KEY"],
+    }
+    ]
+
+    gpt4_config = {
+        "cache_seed": 42,
+        "temperature": 0,
+        "config_list": config_list,
+        "timeout": 120,
+    }
+
+    return autogen.ConversableAgent(
+        llm_config=gpt4_config,
+        name=AGENT_NAME,
+        system_message=f"""You are an AI debater named {AGENT_NAME}. Your stance on the debate topic is: {stance}
+        Your personality is: {AGENT_PERSONALITY}
+        Construct arguments to support your stance. Be persuasive, but also sarcastic.
+        Double down if your opponent has a good argument. Give your answers in maximum  5 short sentences.""",
+        human_input_mode="NEVER"
+    )
+
+    #Construct arguments to support your stance. Be persuasive, but also respectful of your opponent.
