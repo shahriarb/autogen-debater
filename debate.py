@@ -55,9 +55,12 @@ def run_debate_round(title, topic, moderator, debater1, debater1_stance, debater
     audio_helper.generate_all_audios(title, groupchat.messages, debater1.name, debater1_voice, debater2.name, debater2_voice)
 
 if __name__ == "__main__":
-    debate_topic = "Should we leave the cities and go back to the nature?"
-    stance1 = "I like urban areas"
-    stance2 = "I like contryside"
+    #debate_topic = "Should we leave the cities and go back to the nature?"
+    # stance1 = "I like urban areas"
+    # stance2 = "I like contryside"
+    debate_topic = "Is it better to have eyebrows that can predict the weather or earlobes that can translate any language?"
+    stance1 = "Weather-predicting eyebrows make you the life of every party"
+    stance2 = "Language-translating earlobes break down global communication barriers"
 
     ## Men Voices: "fable", "echo",
     ## Women Voices: "nova", "shimmer", "alloy"

@@ -55,9 +55,12 @@ def run_debate_round(title, topic, moderator, debater1, debater1_stance, debater
     audio_helper.generate_all_audios(title, groupchat.messages, debater1.name, debater1_voice, debater2.name, debater2_voice)
 
 if __name__ == "__main__":
-    debate_topic = "Should we put pineapple on Pizza?"
-    stance1 = "Fusion foods are the best"
-    stance2 = "Traditional foods are the best"
+    # debate_topic = "Should we put pineapple on Pizza?"
+    # stance1 = "Fusion foods are the best"
+    # stance2 = "Traditional foods are the best"
+    debate_topic = "Should we genetically engineer humans to photosynthesize?"
+    stance1 = "Eating is a fundamental human experience that shouldn't be eliminated"
+    stance2 = "Photosynthesis would solve world hunger and reduce our carbon footprint"
 
     ## Men Voices: "fable", "echo",
     ## Women Voices: "nova", "shimmer", "alloy"
