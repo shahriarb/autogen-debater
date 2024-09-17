@@ -16,7 +16,7 @@ def run_debate_round(title, topic, moderator, debater1, debater1_stance, debater
     groupchat = autogen.GroupChat(
         agents=[moderator, debater1, debater2],
         messages=[],
-        max_round=14
+        max_round=5
     )
 
     config_list = [
@@ -55,9 +55,9 @@ def run_debate_round(title, topic, moderator, debater1, debater1_stance, debater
     audio_helper.generate_all_audios(title, groupchat.messages, debater1.name, debater1_voice, debater2.name, debater2_voice)
 
 if __name__ == "__main__":
-    debate_topic = "Should we leave the cities and go back to the nature?"
-    stance1 = "I like urban areas"
-    stance2 = "I like contryside"
+    debate_topic = "Should we put pineapple on Pizza?"
+    stance1 = "Fusion foods are the best"
+    stance2 = "Traditional foods are the best"
 
     ## Men Voices: "fable", "echo",
     ## Women Voices: "nova", "shimmer", "alloy"
@@ -66,6 +66,6 @@ if __name__ == "__main__":
 
     debater1_voice = "echo"
     debater2_voice = "nova"
-    debate_title = "round1"
-    moderator = moderator_agent.create_moderator_agent()
+    debate_title = "test-round"
+    moderator = moderator_agent.create_prep_moderator_agent()
     run_debate_round(debate_title, debate_topic, moderator, debater1, stance1, debater1_voice, debater2, stance2, debater2_voice)

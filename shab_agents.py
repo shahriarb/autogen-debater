@@ -4,6 +4,7 @@ import os
 AGENT_NAME='Shab'
 AGENT_PERSONALITY="Analytical and data-driven"
 
+
 def create_debater_agent(stance):
     config_list = [
     {
@@ -24,9 +25,7 @@ def create_debater_agent(stance):
         name=AGENT_NAME,
         system_message=f"""You are an AI debater named {AGENT_NAME}. Your stance on the debate topic is: {stance}
         Your personality is: {AGENT_PERSONALITY}
-        Construct arguments to support your stance. Be persuasive, but also sarcastic.
-        Double down if your opponent has a good argument. Give your answers in maximum  5 short sentences.""",
+        Construct arguments to support your stance. Be persuasive, but also respectful of your opponent.
+        You can ask questions to challenge your opponent's arguments.Give your answers in maximum 5 short sentences.""",
         human_input_mode="NEVER"
     )
-
-    #Construct arguments to support your stance. Be persuasive, but also respectful of your opponent.
