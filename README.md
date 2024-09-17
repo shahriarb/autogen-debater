@@ -10,6 +10,7 @@ pip install -r requirments.txt
 export OPENAI_API_KEY=<REPLACE WITH YOUR KEY>
 
 ## Run Debate
+In this debate, debaters will have at two exchanges and moderator will ask a question as well.
 
 Set your debate topic, debaters and their stance in the debate.py. You can also choose their voice.
 ```
@@ -33,9 +34,10 @@ python debate.py
 
 
 
-## Run Debate Prep
+## Run Fast Debate
+In the Fast debaste each dabater will have one chance to presents their argument.
 
-Set your debate topic, debaters and their stance in the debate-prep.py. You can also choose their voice.
+Set your debate topic, debaters and their stance in the fast-debate.py. You can also choose their voice.
 ```
     debate_topic = "Should we put pineapple on Pizza?"
     stance1 = "Fusion foods are the best"
