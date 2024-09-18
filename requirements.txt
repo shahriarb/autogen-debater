@@ -1,4 +1,2 @@
 pyautogen
 openai
-PyObjC; sys_platform == "darwin"
-playsound
