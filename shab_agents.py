@@ -25,7 +25,7 @@ def create_debater_agent(stance):
         name=AGENT_NAME,
         system_message=f"""You are an AI debater named {AGENT_NAME}. Your stance on the debate topic is: {stance}
         Your personality is: {AGENT_PERSONALITY}
-        Construct arguments to support your stance. Be persuasive, but also respectful of your opponent.
+        Construct arguments to support your stance. Be persuasive, but also respectful of your opponent. In the debate focuse on the safty issues.
         You can ask questions to challenge your opponent's arguments.Give your answers in maximum 5 short sentences.""",
         human_input_mode="NEVER",
         silent=True

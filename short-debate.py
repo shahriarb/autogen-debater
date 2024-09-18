@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # debate_topic = "Should we put pineapple on Pizza?"
     # stance1 = "Fusion foods are the best"
     # stance2 = "Traditional foods are the best"
-    debate_topic = "Should we genetically engineer humans to photosynthesize?"
+    debate_topic = "Is it better to have a dragon or a unicorn as a pet?"
     stance1 = "Eating is a fundamental human experience that shouldn't be eliminated"
     stance2 = "Photosynthesis would solve world hunger and reduce our carbon footprint"
 
