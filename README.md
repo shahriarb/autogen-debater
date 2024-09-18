@@ -30,7 +30,7 @@ Set your debate topic, debaters and their stance in the fast-debate.py. You can 
     debater1_voice = "echo"
     debater2_voice = "nova"
     debate_title = "test-round"
-    moderator = moderator_agent.create_prep_moderator_agent()
+    moderator = moderator_agent.create_short_moderator_agent()
     run_debate_round(debate_title, debate_topic, moderator, debater1, stance1, debater1_voice, debater2, stance2, debater2_voice)
 ```
 

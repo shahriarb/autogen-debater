@@ -31,7 +31,7 @@ def create_moderator_agent():
     )
 
 
-def create_prep_moderator_agent():
+def create_short_moderator_agent():
     config_list = [
     {
         "model": "gpt-4o",
@@ -48,7 +48,7 @@ def create_prep_moderator_agent():
 
     return autogen.ConversableAgent(
         llm_config=gpt4_config,
-        name="Prep-Moderator",
+        name="Moderator",
         system_message="""You are the debate moderator.
         If it is the start of the chat introduce the debate topic and the debaters and ask them to start.
         Do nothing after first exchange.

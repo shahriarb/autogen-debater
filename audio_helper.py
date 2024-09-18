@@ -31,7 +31,7 @@ def generate_all_audios(debate_title, messages, debater1_name, voice1, debater2_
         if content.strip().lower() == sender:
             continue
         voice = "alloy"
-        if sender == "moderator" or sender == "prep-moderator":
+        if sender == "moderator":
             voice="onyx"
         elif sender == debater1_name.lower():
             voice=voice1
