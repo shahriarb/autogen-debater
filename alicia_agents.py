@@ -14,7 +14,7 @@ def create_debater_agent(stance):
 
     gpt4_config = {
         "cache_seed": 42,
-        "temperature": 0,
+        "temperature": 0.2,
         "config_list": config_list,
         "timeout": 120,
     }
