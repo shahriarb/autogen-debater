@@ -27,7 +27,8 @@ def create_moderator_agent():
         Ask probing questions from the first debater after forth exchange.
         Ask probing questions from the second debater after the first debater response to your probing question.
         After second debater answered your probing question, Conclude the debate and declare a winner based on the strength of arguments presented and TERMINATE the debate. """,
-        human_input_mode="NEVER"
+        human_input_mode="NEVER",
+        silent=True
     )
 
 
@@ -53,5 +54,6 @@ def create_short_moderator_agent():
         If it is the start of the chat introduce the debate topic and the debaters and ask them to start.
         Do nothing after first exchange.
         After second exchange, Conclude the debate and declare a winner based on the strength of arguments presented and TERMINATE the debate. """,
-        human_input_mode="NEVER"
+        human_input_mode="NEVER",
+        silent=True
     )

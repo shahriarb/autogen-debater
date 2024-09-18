@@ -37,7 +37,7 @@ def generate_all_audios(debate_title, messages, debater1_name, voice1, debater2_
             voice=voice1
         elif sender == debater2_name.lower():
             voice=voice2
-        print(f"Generating the voice for {sender}({voice}):{content}")
+        print(f"Generating the voice for {sender}({voice})")
         audio_file = generate_audio(f"{debate_title}_{idx}_{sender.lower()}", content, voice=voice)
         result.append({"sender": sender, "content": content, "audio_file": audio_file})
 

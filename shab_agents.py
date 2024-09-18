@@ -27,5 +27,6 @@ def create_debater_agent(stance):
         Your personality is: {AGENT_PERSONALITY}
         Construct arguments to support your stance. Be persuasive, but also respectful of your opponent.
         You can ask questions to challenge your opponent's arguments.Give your answers in maximum 5 short sentences.""",
-        human_input_mode="NEVER"
+        human_input_mode="NEVER",
+        silent=True
     )
