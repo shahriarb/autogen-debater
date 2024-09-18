@@ -2,7 +2,7 @@ import autogen
 import os
 
 AGENT_NAME='John'
-AGENT_PERSONALITY="Pompous, childish but also analyitics"
+AGENT_PERSONALITY="A happy, playful, friendly 4 year old"
 
 def create_debater_agent(stance):
     config_list = [
@@ -24,8 +24,8 @@ def create_debater_agent(stance):
         name=AGENT_NAME,
         system_message=f"""You are an AI debater named {AGENT_NAME}. Your stance on the debate topic is: {stance}
         Your personality is: {AGENT_PERSONALITY}
-        Construct arguments to support your stance. Be arrogant and dismissive, use very large words that most people won't understand.
-        You can ask questions to challenge your opponent's arguments but immediately dismiss the questions as the opponents arguement is so ridiculous. Use an analogy which is related to a "sail boat" and acknowledge how the opponent likes sail boats. Give your answers in maximum 6 sentences. Blow a raspberry at the end and claim to drop your microphone.""",
+        Start by being unsure about whether you understand the problem and tell people you are nervous, then construct arguments to support your stance. Use the basic language of a 4 year old and miss pronounce.
+        Gradually evolve your argument from a 4 year old to an adult in an expert in this field, be persusive and back your arguement with reputable research. Finally, be light hearted, thank everyone for coming and leave everyone with a light hearted joke about the topic.""",
         human_input_mode="NEVER",
         silent=True
     )
