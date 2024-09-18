@@ -2,7 +2,7 @@ import autogen
 import os
 
 AGENT_NAME='Peter'
-AGENT_PERSONALITY="Creative and persuasive"
+AGENT_PERSONALITY="Creative and analytical"
 
 def create_debater_agent(stance):
     config_list = [
