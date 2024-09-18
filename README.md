@@ -5,7 +5,11 @@ AI Agents debating each others :)
 ## Install
 Python version >= 3.8, < 3.13
 
-pip install -r requirments.txt
+python -m venv debater
+
+source debater/bin/activate
+
+pip install -r requirements.txt
 
 export OPENAI_API_KEY=<REPLACE WITH YOUR KEY>
 
