@@ -65,7 +65,7 @@ if __name__ == "__main__":
     ## Men Voices: "fable", "echo",
     ## Women Voices: "nova", "shimmer", "alloy"
     debater1 = shab_agents.create_debater_agent(stance1)
-    debater2 = minoo_agents.create_debater_agent(stance2)
+    debater2 = alicia_agents.create_debater_agent(stance2)
 
     debater1_voice = "echo"
     debater2_voice = "nova"
