@@ -58,14 +58,14 @@ if __name__ == "__main__":
     # debate_topic = "Should we put pineapple on Pizza?"
     # stance1 = "Fusion foods are the best"
     # stance2 = "Traditional foods are the best"
-    debate_topic = "Should we genetically engineer humans to photosynthesize?"
-    stance1 = "Eating is a fundamental human experience that shouldn't be eliminated"
-    stance2 = "Photosynthesis would solve world hunger and reduce our carbon footprint"
+    debate_topic = "Is it more practical to have fingers that can transform into Swiss Army knife tools or toes that can pick up Wi-Fi signals?"
+    stance1 = "Siwss Army fingers offer unparalleled handiness in everyday life"
+    stance2 = "Wi-Fi toes ensure you're always connected, even in remote locations."
 
     ## Men Voices: "fable", "echo",
     ## Women Voices: "nova", "shimmer", "alloy"
-    debater1 = shab_agents.create_debater_agent(stance1)
-    debater2 = minoo_agents.create_debater_agent(stance2)
+    debater1 = alicia_agents.create_debater_agent(stance1)
+    debater2 = peter_agents.create_debater_agent(stance2)
 
     debater1_voice = "echo"
     debater2_voice = "nova"

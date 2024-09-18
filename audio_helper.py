@@ -1,4 +1,4 @@
-import playsound
+#import playsound
 from openai import OpenAI
 
 client = OpenAI()
@@ -38,7 +38,8 @@ def generate_all_audios(debate_title, messages, debater1_name, voice1, debater2_
         elif sender == debater2_name.lower():
             voice=voice2
         print(f"Generating the voice for {sender}({voice})")
-        audio_file = generate_audio(f"{debate_title}_{idx}_{sender.lower()}", content, voice=voice)
+        #audio_file = generate_audio(f"{debate_title}_{idx}_{sender.lower()}", content, voice=voice)
+        audio_file = ""
         result.append({"sender": sender, "content": content, "audio_file": audio_file})
 
     print("\n\n==================================\n")
@@ -66,6 +67,6 @@ def generate_all_audios(debate_title, messages, debater1_name, voice1, debater2_
         content = item["content"]
         audio_file = item["audio_file"]
         print(f"\n---->{sender}<----------:\n{content}\n{'-'*50}")
-        playsound.playsound(audio_file, True)
+        #playsound.playsound(audio_file, True)
 
     return result
