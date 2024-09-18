@@ -52,5 +52,11 @@ Set your debate topic, debaters and their stance in the debate.py. You can also 
 
 ```
 
-
 python debate.py
+
+## Voice samples
+
+Application is using OpenAI tts APIs to generate voices.
+To see the samples check [Voice Options](https://platform.openai.com/docs/guides/text-to-speech/voice-options)
+
+Note: `Onyx` is reserved for moderators.
